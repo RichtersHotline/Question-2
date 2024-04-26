@@ -6,3 +6,54 @@ padding: 0;
 box-sizing:border-box;
 
 }
+body {
+
+    background-color:#2A71EF;
+}
+ul {
+    list-style-type: none;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:2px dotted white;
+  padding-bottom:40px;
+margin-top:20px;
+  }
+  
+  li {
+    display:inline-block;
+  }
+  .container {
+display:flex;
+justify-content:space-evenly;
+  }
+  li a {
+    font-size:30px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+h1 {
+    color:white;
+    text-decoration:underline;
+}
+td, th {
+    color:white;
+    margin:auto;
+    font-size:25px;
+    padding:19px;
+    border-bottom:2px solid white;
+}
+.Mid {
+
+    display:flex;
+    justify-content:center;
+
+}
+.card {
+    transition: all 1s;
+}
+.card:hover {
+transform: scale(1, 1);
+    box-shadow:2px 2px 100px purple;
+}
