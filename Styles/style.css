@@ -1,13 +1,17 @@
+/* Sets the default margins and padding to 0 before any element */
 *,
 *::before,
 *::after {
 margin:0;
 padding: 0;
+/* box sizing border box allows you to include padding and borders to an elements total width and or height */
 box-sizing:border-box;
 
 }
-body {
 
+body {
+/* This is not the only way to use colour you may also use hex, gradients, predefined colours etc like color:blue or color: #A020F0
+ */
     background-color:#2A71EF;
 }
 ul {
@@ -53,7 +57,112 @@ td, th {
 .card {
     transition: all 1s;
 }
+/* The images will hover when moused over */
 .card:hover {
 transform: scale(1, 1);
     box-shadow:2px 2px 100px purple;
 }
+/* Styles all divs with the class of .ArticleContent */
+.ArticleContent {
+
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    text-align:center;
+    text-justify:inter-word;
+}
+/* Selects all p elements in the divs with the class of ArticleContent */
+.ArticleContent p {  
+    
+margin-top:20px;
+}
+/*Selects only the first line of the p element in the ArticleContent div */
+.ArticleContent::first-line {
+
+    color:yellow;
+    text-align:center;
+
+}
+/*Selects h1 that is after the div ArticleContent */
+.ArticleContent + h1 {
+text-align:center;
+color:white;
+font-size:35px;
+}
+h1 {
+
+    text-align:center;
+    color:white;
+}
+.Places {
+background-color:#102c5d;
+    color:white;
+    font-size:35px;
+}
+.Tourist > p {
+
+color:white;
+font-size:20px;
+
+}
+/* All the text inside the Tourist div will be red when hovered */
+
+.Tourist p:hover {
+
+    color:red;
+    font-size:30px;
+}
+/* All the text inside the Tourist div will be green when clicked */
+.Tourist p:active {
+    color:green;
+}
+.Tourist {
+    text-align:center;
+}
+
+/* Selects buttons that come after h2 */
+h2 ~ button  {
+    display:flex; 
+    justify-content:center;
+  background-color:#102c5d;
+    width:300;
+   height:30px;
+   margin:auto;
+color:white;
+}
+h2 {
+    text-align:center;
+    color:white;
+}
+#btn2 {
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    background-color:orange;
+    width:300px;
+    height:30px;
+    color:white;
+}
+.Block {
+    width:990px;
+    height:200px;
+    background-color:purple;
+    display:flex;
+    justify-content:center;
+    margin:auto;
+}
+.Block:hover {
+
+    background-color:gray;
+    color:gray;
+}
+/* Sets the first letter and the first line of every h2 different colours */
+h2::first-letter {
+
+    color:orange;;
+}
+h2::first-line {
+
+    color:darkgoldenrod;
+}
+.
